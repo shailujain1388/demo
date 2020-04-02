@@ -1,5 +1,9 @@
 package com.shailu.practice.demo.repository;
 
-public class CustomerRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.shailu.practice.demo.entity.Customer;
+
+public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
 }
