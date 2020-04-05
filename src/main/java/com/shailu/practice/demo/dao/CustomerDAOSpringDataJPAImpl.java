@@ -13,7 +13,8 @@ import com.shailu.practice.demo.repository.CustomerRepository;
 @Qualifier("SpringDataJPA")
 public class CustomerDAOSpringDataJPAImpl implements CustomerDAO {
 
-	@Autowired CustomerRepository customerRepository;
+	@Autowired 
+	CustomerRepository customerRepository;
 	
 	@Override
 	public List<Customer> getCustomers() {
